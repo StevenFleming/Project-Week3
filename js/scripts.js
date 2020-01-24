@@ -12,6 +12,8 @@ $(document).ready(function(){
     event.preventDefault();
     var input = $("#userInput").val();
     console.log(input);
+    var output = (input);
+    $("#output").text(`Translation: ${output}`)
   });
 });
 
