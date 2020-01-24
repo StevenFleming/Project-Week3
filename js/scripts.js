@@ -3,16 +3,42 @@
 
 // function translateToPL(str){
 
+// // }
+// function respondToOne(input){
+//   input.replace("1","beep");
+// //   console.log(onestr)
 // }
-
-
 
 $(document).ready(function(){
   $("#form1").submit(function(event){
     event.preventDefault();
     var input = $("#userInput").val();
-    console.log(input);
-    var output = (input);
+    varOne = input.search("1");
+    varTwo = input.search("2")
+    varThree = input.search("3")
+    var inputArray = input.split("");
+    console.log(inputArray)
+    var textArrayBeep =["Beep",];
+    console.log(textArray)
+
+      if (varOne >=0){
+        inputArray = textArrayBeep.slice(1);
+        console.log(inputArray)
+    }
+      
+
+
+    console.log(varOne);
+    // var inputArray = input.split("");
+    // console.log(inputArray)
+    var inputInt = parseInt($("#userInput").val());
+    var output = inputArray;
+  
+// If (input === 1){
+
+// }
+
+
     $("#output").text(`Translation: ${output}`)
   });
 });
