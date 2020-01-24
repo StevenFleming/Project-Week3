@@ -17,17 +17,27 @@
 
 
 // Frontend logic User interface
+inputInterger = parseInt($("input#limit").val());
+if (inputInterger===1)
+  
+
+
+
+    function convertStringToArray(inputInterger) {
+
+    console.log(inputInterger);
+    var inputForAllNumbers =[]
+    for (var i = 1; i <= inputInterger; i += 1)
+    console.log(i);
+       inputForAllNumbers.push(i);
+       inputForAllNumbers.show("#Show");
+  }
+
+
+
 $(document).ready(function() {
   $("form#form1").submit(function(event) {
     event.preventDefault();
-    var inputForAllNumbers =[]
-    var inputInterger = parseInt($("input#limit").val());
-    for (var i = 1; i <= inputInterger; i += 1)
-    console.log(i);
-    {
-       inputForAllNumbers.push(i);
-       inputForAllNumbers.show();
-  }
   });
 });
 
