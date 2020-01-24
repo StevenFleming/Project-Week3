@@ -69,14 +69,20 @@ Output "Beep", "Boop", "I'm sorry Dave but I can't do that"
 Include similar specifications in your README for all behaviors your program demonstrates.
 
 
-
 Tools 
+Pesudo code 
+If (string containes 1)
+  {return text "Beep"}
+If (string containes 2)
+  {return text Boop}
+If (string containes 3)
+  {return text "Im sorry Dave"}
 
-for (var index = 1; index <= 3; index += 1) {
-  alert(index);
+Else  
+for (var  = 1; index  Value of users inputed number; index += 1) {
+ *new variable Inputs in string form = i toString()
 }
 
-split()
 
 toString()- converts an array to a string of (comma separated) array values
 
