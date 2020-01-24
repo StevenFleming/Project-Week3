@@ -18,10 +18,6 @@ Specs
 Break the program down into simple, individual behaviors with input/output examples. Begin with the simplest possible behavior. List these behaviors (also known as "specs" or "specifications") in the project's README.md file. To get you started, this should be one of your first specs:
 
 
-Spec: The program returns an error for all nonNumber Inputs
-Input:"Hello"
-Output "error"
-
 Spec: The program converts the inputted string into an interger
 Input: "1"
 Output 1

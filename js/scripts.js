@@ -20,17 +20,13 @@
 $(document).ready(function() {
   $("form#form1").submit(function(event) {
     event.preventDefault();
+    var inputForAllNumbers =[]
     var inputInterger = parseInt($("input#limit").val());
-console.log(inputInterger)
-   
-   
-    var inputForAllNumbers=[]
-    for (var i = 0; i <= inputInterger; i += 1) 
-      console.log(i);
+    for (var i = 1; i <= inputInterger; i += 1)
+    console.log(i);
     {
-        inputForAllNumbers.push(i);
-      
-    return inputForAllNumbers;
+       inputForAllNumbers.push(i);
+       inputForAllNumbers.show();
   }
   });
 });
@@ -42,3 +38,6 @@ console.log(inputInterger)
 //       inputArray.push("beep");
 //       console.log(inputArray)
 //     }
+
+
+// inputForAllNumbers.pop()
