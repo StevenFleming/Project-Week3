@@ -7,6 +7,8 @@ $(document).ready(function() {
     console.log(inputString)
     var inputArray = inputString.split("");
     console.log(inputArray)
+    var inputInterger = parseInt($("input#limit").val());
+    console.log(inputInterger)
   });
 });
 
