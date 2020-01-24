@@ -3,7 +3,10 @@ $(document).ready(function() {
 
     event.preventDefault();
 
-    var year = parseInt($("input#limit").val());
-    console.log(year)
+    var inputString = ($("input#limit").val());
+    console.log(inputString)
+    var inputArray = inputString.split("");
+    console.log(inputArray)
   });
 });
+
