@@ -25,23 +25,25 @@ $(document).ready(function(){
         console.log(inputArray)
     }
 
-      else if (input.includes("2")){
+      if (input.includes("2")){
         inputArray.push("Boop");
       }
 
-      else if (input.includes("1")){
+      if (input.includes("1")){
         inputArray.push("Beep");
       }
 
       else {
-        var inputForAllNumbers =[]
+        inputArray.push("Beep")
+        inputArray.push("Boop")
+        inputArray.push("I'm sorry, Dave. I'm afraid I can't do that.")
         var inputInt = parseInt($("#userInput").val());
           for (i= 4; i <= inputInt; i ++) 
 
     {
-      inputForAllNumbers.push([i]);
+      inputArray.push([i]);
 
-       inputArray = inputForAllNumbers.toString() 
+       inputArray.toString() 
   }
       }
 
@@ -57,7 +59,7 @@ $(document).ready(function(){
 function findsReplacesOneTwoThree(){
   inputForAllNumbers.replace(edit1 = str.replace("1", "beep"));
   edit1.replace("2", "boop");
-  edit2.replace("3", "I'm Sorry")
+  edit2.replace("3", "I'm Sorry");
 }
 
 
