@@ -17,7 +17,7 @@ $(document).ready(function(){
     varTwo = input.search("2")
     varThree = input.search("3")
     var inputArray = input.split(" ");
-    
+
     var textArrayBeep =["Beep"];
     var textArrayBoop =["Boop"];
     var textArrayDave =["I'm sorry, Dave. I'm afraid I can't do that."];
@@ -28,16 +28,21 @@ $(document).ready(function(){
         console.log(inputArray)
     }
 
-      if (input.length =1 && varTwo >=0){
+      else if (input.length =1 && varTwo >=0){
         inputArray = textArrayBoop;
       }
 
-      if (input.length =1 && varOne >=0){
+      else if (input.length =1 && varOne >=0){
         inputArray = textArrayBeep;
       }
 
-      else{
+      else {
+        var Arrayshow =[]
         var inputInt = parseInt($("#userInput").val());
+        var 
+        console.log(inputInt)
+        for  (var i = 1; i <= inputInt; i += 1);
+          inputArray[i];
       }
 
 
