@@ -20,6 +20,9 @@ $(document).ready(function(){
     varThree = input.search("3")
     var inputArray = []
 
+    if( isNaN(input)){
+      alert("Not a number.  Please enter numbers only.");
+     }
       if (input.includes("3")){
         inputArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
         console.log(inputArray)
