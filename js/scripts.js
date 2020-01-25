@@ -20,30 +20,27 @@ $(document).ready(function(){
     varThree = input.search("3")
     var inputArray = input.split(" ");
 
-    var textArrayBeep =["Beep"];
-    var textArrayBoop =["Boop"];
-    var textArrayDave =["I'm sorry, Dave. I'm afraid I can't do that."];
-
-
-      if (input.length =1 && varThree >=0){
-        inputArray = textArrayDave;
+      if (input.includes("3")){
+        inputArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
         console.log(inputArray)
     }
 
-      else if (input.length =1 && varTwo >=0){
-        inputArray = textArrayBoop;
+      else if (input.includes("2")){
+        inputArray.push("Boop");
       }
 
-      else if (input.length =1 && varOne >=0){
-        inputArray = textArrayBeep;
+      else if (input.includes("1")){
+        inputArray.push("Beep");
       }
 
       else {
         var inputForAllNumbers =[]
         var inputInt = parseInt($("#userInput").val());
-          for (var i = 0; i <= inputInt; i += 1) 
+          for (i= 4; i <= inputInt; i ++) 
+
     {
-        inputForAllNumbers.push(i);
+      inputForAllNumbers.push([i]);
+
        inputArray = inputForAllNumbers.toString() 
   }
       }
@@ -53,12 +50,22 @@ $(document).ready(function(){
   });
 });
 
+// I want to create a function that searches the array for 1 , 2, 3, 
+// then it replaces the text in the array at the same position with beep, boop, Im sorry
+// what if i just ran Replace three times on inputForAllNumbers
+
+function findsReplacesOneTwoThree(){
+  inputForAllNumbers.replace(edit1 = str.replace("1", "beep"));
+  edit1.replace("2", "boop");
+  edit2.replace("3", "I'm Sorry")
+}
 
 
 
 
-
-
+// I want to create a function that searches the array for 1 , 2, 3, 
+// then it replaces the text in the array at the same position with beep boop Im sorry
+// what if i just ran Replace three times on inputForAllNumbers
 
 
 
