@@ -16,29 +16,32 @@ $(document).ready(function(){
     varOne = input.search("1");
     varTwo = input.search("2")
     varThree = input.search("3")
-    var inputArray = input.split("");
-    console.log(inputArray)
-    var textArrayBeep =["Beep",];
-    console.log(textArray)
+    var inputArray = input.split(" ");
+    
+    var textArrayBeep =["Beep"];
+    var textArrayBoop =["Boop"];
+    var textArrayDave =["I'm sorry, Dave. I'm afraid I can't do that."];
 
-      if (varOne >=0){
-        inputArray = textArrayBeep.slice(1);
+
+      if (input.length =1 && varThree >=0){
+        inputArray = textArrayDave;
         console.log(inputArray)
     }
-      
+
+      if (input.length =1 && varTwo >=0){
+        inputArray = textArrayBoop;
+      }
+
+      if (input.length =1 && varOne >=0){
+        inputArray = textArrayBeep;
+      }
+
+      else{
+        var inputInt = parseInt($("#userInput").val());
+      }
 
 
-    console.log(varOne);
-    // var inputArray = input.split("");
-    // console.log(inputArray)
-    var inputInt = parseInt($("#userInput").val());
     var output = inputArray;
-  
-// If (input === 1){
-
-// }
-
-
     $("#output").text(`Translation: ${output}`)
   });
 });
