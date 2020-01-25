@@ -1,5 +1,7 @@
 
-
+        // console.log(inputInt)
+        // for  (var i = 0; i <= inputInt; i += 1);
+        //   inputArray[i];
 
 // function translateToPL(str){
 
@@ -37,14 +39,14 @@ $(document).ready(function(){
       }
 
       else {
-        var Arrayshow =[]
+        var inputForAllNumbers =[]
         var inputInt = parseInt($("#userInput").val());
-        var 
-        console.log(inputInt)
-        for  (var i = 1; i <= inputInt; i += 1);
-          inputArray[i];
+          for (var i = 0; i <= inputInt; i += 1) 
+    {
+        inputForAllNumbers.push(i);
+       inputArray = inputForAllNumbers.toString() 
+  }
       }
-
 
     var output = inputArray;
     $("#output").text(`Translation: ${output}`)
