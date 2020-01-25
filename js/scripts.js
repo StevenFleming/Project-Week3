@@ -18,18 +18,18 @@ $(document).ready(function(){
     varOne = input.search("1");
     varTwo = input.search("2")
     varThree = input.search("3")
-    var inputArray = input.split(" ");
+    var inputArray = []
 
       if (input.includes("3")){
         inputArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
         console.log(inputArray)
     }
 
-      if (input.includes("2")){
+     else if (input.includes("2")){
         inputArray.push("Boop");
       }
 
-      if (input.includes("1")){
+     else if (input.includes("1")){
         inputArray.push("Beep");
       }
 
@@ -42,8 +42,7 @@ $(document).ready(function(){
 
     {
       inputArray.push([i]);
-
-       inputArray.toString() 
+       inputArray.toString(); 
   }
       }
 
@@ -51,6 +50,8 @@ $(document).ready(function(){
     $("#output").text(`Translation: ${output}`)
   });
 });
+
+
 
 // I want to create a function that searches the array for 1 , 2, 3, 
 // then it replaces the text in the array at the same position with beep, boop, Im sorry
