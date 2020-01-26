@@ -38,13 +38,23 @@ $(document).ready(function(){
         inputArray.push("Boop")
         inputArray.push("I'm sorry, Dave. I'm afraid I can't do that.")
         var inputInt = parseInt($("#userInput").val());
-          for (i= 4; i <= inputInt; i ++) 
-          numberstrings= i.toString()
+          for (i= 4; i <= inputInt; i ++) {
+          numberstrings= i.toString();
             if (numberstrings.includes("3")) {
               var Dave = "I'm sorry, Dave. I'm afraid I can't do that."
-              inputArray[i] = Dave
-}
-
+              inputArray[i] = Dave;
+              console.log(i);
+              }
+              else if (numberstrings.includes("2")) {
+                var Boop = "Boop"
+                inputArray[i] = Boop;
+                console.log(i);
+                }
+                else if (numberstrings.includes("1")) {
+                  var Beep = "Beep"
+                  inputArray[i] = Beep;
+                  console.log(i);
+                  }
     {
       inputArray.push([i]);
        inputArray.toString(); 
@@ -53,26 +63,26 @@ $(document).ready(function(){
 
     var output = inputArray;
     $("#output").text(`Translation: ${output}`)
-  });
+  };
 });
-
+});
 
 
 // I want to create a function that searches the array for 1 , 2, 3, 
 // then it replaces the text in the array at the same position with beep, boop, Im sorry
 // what if i just ran Replace three times on inputForAllNumbers
 
-function findsReplacesOneTwoThree(){
-  inputForAllNumbers.replace(edit1 = str.replace("1", "beep"));
-  edit1.replace("2", "boop");
-  edit2.replace("3", "I'm Sorry");
-}
+// function findsReplacesOneTwoThree(){
+//   inputForAllNumbers.replace(edit1 = str.replace("1", "beep"));
+//   edit1.replace("2", "boop");
+//   edit2.replace("3", "I'm Sorry");
+// }
 
-numberstrings= i.toString()
-if (numberstrings.includes("3")) {
-  var Dave = "I'm sorry, Dave. I'm afraid I can't do that."
-  inputArray[i]
-}
+// numberstrings= i.toString()
+// if (numberstrings.includes("3")) {
+//   var Dave = "I'm sorry, Dave. I'm afraid I can't do that."
+//   inputArray[i]
+// }
 
 
 // I want to create a function that searches the array for 1 , 2, 3, 
