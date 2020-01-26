@@ -42,7 +42,6 @@ $(document).ready(function(){
         inputArray.push("I'm sorry, Dave. I'm afraid I can't do that.")
         var inputInt = parseInt($("#userInput").val());
           for (i= 4; i <= inputInt; i ++) 
-
     {
       inputArray.push([i]);
        inputArray.toString(); 
@@ -66,6 +65,13 @@ function findsReplacesOneTwoThree(){
   edit2.replace("3", "I'm Sorry");
 }
 
+// numberstrings= i.toString()
+// if (numberstrings.includes("3")) {
+//   var Dave = "I'm sorry, Dave. I'm afraid I can't do that."
+//   inputArray[i]
+// }
+
+// else if 
 
 
 
