@@ -39,6 +39,7 @@ $(document).ready(function(){
         inputArray.push("I'm sorry, Dave. I'm afraid I can't do that.")
         var inputInt = parseInt($("#userInput").val());
           for (i= 4; i <= inputInt; i ++) 
+          
 
     {
       inputArray.push([i]);
