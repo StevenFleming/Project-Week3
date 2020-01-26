@@ -20,25 +20,25 @@ $(document).ready(function(){
     varThree = input.search("3")
     var inputArray = []
 
-      if (input.includes("3")){
-        inputArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
-        console.log(inputArray)
-    }
+    //   if (input.includes("3")){
+    //     inputArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
+    //     console.log(inputArray)
+    // }
 
-     else if (input.includes("2")){
-        inputArray.push("Boop");
-      }
+    //  else if (input.includes("2")){
+    //     inputArray.push("Boop");
+    //   }
 
-     else if (input.includes("1")){
-        inputArray.push("Beep");
-      }
+    //  else if (input.includes("1")){
+    //     inputArray.push("Beep");
+    //   }
 
-      else {
-        inputArray.push("Beep")
-        inputArray.push("Boop")
-        inputArray.push("I'm sorry, Dave. I'm afraid I can't do that.")
+    //   else {
+    //     inputArray.push("Beep")
+    //     inputArray.push("Boop")
+    //     inputArray.push("I'm sorry, Dave. I'm afraid I can't do that.")
         var inputInt = parseInt($("#userInput").val());
-          for (i= 4; i <= inputInt; i ++) {
+          for (i= 1; i <= inputInt; i ++) {
           numberstrings= i.toString();
             if (numberstrings.includes("3")) {
               var Dave = "I'm sorry, Dave. I'm afraid I can't do that."
@@ -55,16 +55,15 @@ $(document).ready(function(){
                   inputArray[i] = Beep;
                   console.log(i);
                   }
-    {
-      inputArray.push([i]);
-       inputArray.toString(); 
-  }
+               else { 
+                  inputArray.push([i]);
+                  inputArray.toString(); 
+               }
       }
 
     var output = inputArray;
     $("#output").text(`Translation: ${output}`)
-  };
-});
+  });
 });
 
 
