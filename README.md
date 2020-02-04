@@ -1,93 +1,58 @@
-Specs for Beep Boop
+
+# Beep Boop I'm Sorry
+
+#### _Project Using For Loops and Conditional Statements, Javascript, 1/2/2020_
+
+#### By _**Steven Fleming**_
+
+## Description
+Specs 
+Allows User Input a number and have a string of text replace numbers including certain digits.
+
+## Setup/Installation Requirements
+
+* _Go to my github pages, download/clone from github and run index.html_
+
+github-pages link: https://github.com/StevenFleming/Pizza-Parlor-/tree/gh-pages/Pizza
+
+_finished_
+
+## Specs
+
+Specs 
+Captures User input 
+
+Creates an Array of every interger untill Users inputted number 
+
+If the number includes the digit 1 the position in the Array is replaced with Beep
 
 
-
-Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
-Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
-Numbers that contain a 3: all digits are replaced (all digits) with "I'm sorry, Dave. I'm afraid I can't do that."
-
-The number 13 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that."
-The number 21 should be replaced with "Boop".
-The number 32 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that."
-A user should be able to enter a new number and see new results over and over again.
-
-Example: If a user inputs a 5, the program should display a list of values: "0", "Beep!", "Boop", "I'm Sorry...", 4, 5
-
-Specs
-
-Break the program down into simple, individual behaviors with input/output examples. Begin with the simplest possible behavior. List these behaviors (also known as "specs" or "specifications") in the project's README.md file. To get you started, this should be one of your first specs:
+If the number includes the digit 2 the position in the Array is replaced with Boop
 
 
-Spec: The program converts the inputted string into an interger
-Input: "1"
-Output 1
+If the number includes the digit 3 the position in the Array is replaced with I'm Sorry Dave I'm Afraid I cant do that. 
 
-Spec: The program returns a range of intergers from 0 to the users inputted number
-Input: "4"
-Output: "0, 1, 2, 3, 4"
+Allows User to create test mulitiple numbers which replace the previous array
+## Known Bugs
 
-Spec: The program converts the intergers back into Strings
-0, 1, 2, 3, 4,
-"0", "1", "2", "3" "4"
+_No know bugs _
 
+## Support and contact details
 
-Spec: The program recoginizes the charecter 3 and returns the single outout Beep
-Input: "3"
-Output: "I'm Sorry Dave But I can't do that"
-Input: "32"
-Output: "I'm Sorry Dave But I can't do that"
+_Email: 12flemings@gmail.com_
 
-Spec: The program reconginizes the Charecter 2 and returns the Single output Boop
-Input: "2"
-Output: "Boop"
-Input: "21"
-Output: "Boop"
+## Technologies Used
 
-Spec: The program reconginizes the Charecter 1 and returns the single output Beep
-Input: "1"
-Output: "Beep"
-Input: "19"
-Output: "Beep"
+_Html, Css, Javascript, jQuery, Bootstrap_
 
-Spec: If user input does not contain 1,2 or 3 the program displays a list of values.
+### License
 
-Input "4"
-Output "1","2,"3","4"
+*Copyright (c)
 
-Spec: Listed outputs are converted into "Beep", "Boop", "Im sorry Dave .."
-Input "4"
-Output "Beep", "Boop", "I'm sorry Dave but I can't do that", 4"
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN*
 
-
-
-Include similar specifications in your README for all behaviors your program demonstrates.
-
-
-Tools 
-Pesudo code 
-If (string containes 1)
-  {return text "Beep"}
-If (string containes 2)
-  {return text Boop}
-If (string containes 3)
-  {return text "Im sorry Dave"}
-
-Else  
-for (var  = 1; index  Value of users inputed number; index += 1) {
- *new variable Inputs in string form = i toString()
-}
-
-
-toString()- converts an array to a string of (comma separated) array values
-
-Array.filter()
-The filter() method creates a new array with array elements that passes a test.
-
-
-replace() method 
-str = "Please visit Microsoft and Microsoft!";
-var n = str.replace("Microsoft", "W3Schools");
-To replace all matches, use a regular expression with a /g flag (global match):
-Does not change the string it is called on. It returns a new string.
+Copyright (c) 2020 Steven Fleming
