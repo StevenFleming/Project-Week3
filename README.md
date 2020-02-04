@@ -13,7 +13,7 @@ Allows User Input a number and have a string of text replace numbers including c
 
 * _Go to my github pages, download/clone from github and run index.html_
 
-github-pages link: https://github.com/StevenFleming/Pizza-Parlor-/tree/gh-pages/Pizza
+github-pages link: https://github.com/StevenFleming/Project-Week3/blob/gh-pages
 
 _finished_
 
